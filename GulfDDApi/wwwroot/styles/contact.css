@@ -239,7 +239,7 @@ body {
 }
 .contact-body form .input-container:nth-child(4) textarea {
   display: inline;
-  position: absolute;
+  /* position: absolute; */
   top: 100%;
   right: 10%;
   height: 280px;
