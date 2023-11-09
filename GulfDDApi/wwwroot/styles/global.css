@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Tajawal";
+  src: url("../fonts/Tajawal-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+/* RIGHT */
+@font-face {
+  font-family: "Tajawal";
+  src: url("../fonts/Tajawal-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+/* RIGHT */
+@font-face {
+  font-family: "Tajawal";
+  src: url("../fonts/Tajawal-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url("../fonts/Tajawal-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url("../fonts/Tajawal-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url("../fonts/Tajawal-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kefa";
+  src: url("../fonts/kefa-bold.ttf");
+  font-weight: bold;
+  font-style: bold;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+@media (max-width: 968px) {
+  html {
+    overflow-x: hidden;
+  }
+} /*# sourceMappingURL=global.css.map */

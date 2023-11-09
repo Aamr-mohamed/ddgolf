@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/GDD.png" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;500;700&display=swap" rel="stylesheet" /> -->
+    <title>Add-update Article</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <nav class="nav-container switch-dir"></nav>
+            <div class="about-header switch-dir">
+                <img class="header-main-img" src="./assets/Group 29862.png" alt="Header Image" />
+            </div>
+        </div>
+        <div class="contact-body switch-dir">
+            <h1 style="margin: auto;" class="en">Add-update Article</h1>
+            <h1 style="margin: auto;" class="ar">إضافة-تحرير المقالة</h1>
+            <form id="myForm" action="">
+                <div class="input-container">
+                    <label class="en" for="">Title</label>
+                    <label class="ar" for="">عنوان</label>
+                    <input type="text" name="titleEn" id="titleEn" required />
+                </div>
+                <div class="input-container">
+                    <label class="ar" for="">Title</label>
+                    <label class="en" for="">عنوان</label>
+                    <input type="text" name="titleAr" id="titleAr" required />
+                </div>
+                
+                <div class="input-container">
+                    
+                    <label class="ar" for="">Content</label>
+                    <label class="en" for="">محتوى</label>
+
+                    <textarea style="height: 280px; resize: none; padding-top: 10px;" class="contact-form-textarea" name="contentAr" id="contentAr"></textarea>
+                </div>
+                
+                <div class="input-container">
+                    
+                    <label class="en" for="">Content</label>
+                    <label class="ar" for="">محتوى</label>
+
+                    <textarea style="height: 280px; resize: none; padding-top: 10px;" class="contact-form-textarea" name="contentEn" id="contentEn"></textarea>
+                </div>
+                <div class="input-container">
+                    <label class="en" for="">Image</label>
+                    <label class="ar" for="">صورة</label>
+
+                    <input style="padding-top: 20px;" type="file" name="image" id="image" required>
+                </div>
+                <div class="submit-button-container">
+                    <button class="en" type="submit">
+                        Send
+                        <img src="./assets//arrow-left-svgrepo-com.svg" alt="Arrow" loading="lazy" />
+                    </button>
+                    <button class="ar" type="submit">
+                        ارسال
+                        <img src="./assets/arrow-right-svgrepo-com.png" alt="Arrow" loading="lazy" class="ar" />
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Js render service Items -->
+    </section>
+    <section class="subscribe-news switch-dir"></section>
+    <div class="breaker"></div>
+    <footer class="switch-dir"></footer>
+    <script type="text/javascript" src="./js/layout.js"></script>
+    <script type="text/javascript" src="./js/addArticle.js"></script>
+    <script type="text/javascript" src="./js/localization.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.delete-btn {
+  background-color: #d9534f; /* Bootstrap danger color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: auto;
+  width: 30%;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+}
+.delete-btn:hover {
+  background-color: #c9302c; /* Darker shade on hover */
+}
+.edit-btn {
+  background-color: #68bbe3; /* Bootstrap danger color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-bottom: 20px;
+  width: 30%;
+  font-size: 20px;
+  font-weight: 500;
+
+  display: block;
+}
+.edit-btn:hover {
+  background-color: #0e86d4; /* Darker shade on hover */
+}
