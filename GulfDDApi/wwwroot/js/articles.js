@@ -1,5 +1,6 @@
 const url = "http://localhost:5066";
 const lang = sessionStorage.getItem("lang") ?? "en";
+import zbo from "../assets/arrow-left-svgrepo-com.svg";
 
 renderArticles();
 
@@ -23,11 +24,18 @@ async function renderArticles() {
     title.innerText = lang == "ar" ? art.titleAr : art.titleEn;
     title.classList.add(lang);
 
-    const btn = `<button onclick="window.location='${url}/article-info.html?lang=${lang}&id=${
+    const btn = `
+  <button onclick="window.location='${url}/article-info.html?lang=${lang}&id=${
       art.id
-    }'" class="${lang}"> ${
-      lang == "ar" ? "اقرا المزيد" : "Read more"
-    } <img src="./assets//arrow-left-svgrepo-com.svg" alt="Arrow" loading="lazy" /> </button>`;
+    }'" class="${lang}">
+    ${lang === "ar" ? "اقرا المزيد" : "Read more"}
+    <img src="${
+      lang === "ar"
+        ? "../assets/arrow-right-svgrepo-com.svg"
+        : "../assets/arrow-left-svgrepo-com.svg"
+    }" alt="Arrow" loading="lazy" />
+  </button>
+`;
 
     container.appendChild(img);
     container.appendChild(date);
