@@ -6,6 +6,7 @@ const id = params.get("id");
 
 if (id) {
   pageTitle = "Edit Article";
+  document.querySelector("#h1-title").innerHTML = pageTitle;
   document.title = pageTitle;
   populateValues(id);
 }
