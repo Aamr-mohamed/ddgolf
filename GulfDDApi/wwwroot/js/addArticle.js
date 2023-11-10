@@ -5,7 +5,7 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
 if (id) {
-  pageTitle = "Edit Article";
+  pageTitle = lang == "en" ? "Edit Article" : "تعديل المقال";
   document.querySelector("#h1-title").innerHTML = pageTitle;
   document.title = pageTitle;
   populateValues(id);
