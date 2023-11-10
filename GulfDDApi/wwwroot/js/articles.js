@@ -1,6 +1,5 @@
 const url = "http://localhost:5066";
 const lang = sessionStorage.getItem("lang") ?? "en";
-import zbo from "../assets/arrow-left-svgrepo-com.svg";
 
 renderArticles();
 
@@ -31,7 +30,7 @@ async function renderArticles() {
     ${lang === "ar" ? "اقرا المزيد" : "Read more"}
     <img src="${
       lang === "ar"
-        ? "../assets/arrow-right-svgrepo-com.svg"
+        ? "../assets/arrow-right-svgrepo-com.png"
         : "../assets/arrow-left-svgrepo-com.svg"
     }" alt="Arrow" loading="lazy" />
   </button>

@@ -9,7 +9,6 @@ renderSideArticles();
 async function renderArticle(id) {
   const parent = document.querySelector(".left-section");
   const article = await getArticle(id);
-  console.log(article);
   const title = document.createElement("h2");
   title.innerText = lang == "ar" ? article.titleAr : article.titleEn;
   title.classList.add(lang);
@@ -30,7 +29,7 @@ async function renderArticle(id) {
   parent.appendChild(content);
 
   const editBtn = document.createElement("button");
-  editBtn.innerText = lang == "en" ? "Edit Article" : "تصحيح المقال";
+  editBtn.innerText = lang == "en" ? "Edit Article" : "تعديل المقال";
   editBtn.classList.add(lang, "edit-btn");
   editBtn.onclick = () => {
     window.location.href = `${url}/addArticle.html?lang=${lang}&id=${id}`;
@@ -66,10 +65,19 @@ async function renderArticle(id) {
 
 async function renderSideArticles() {
   const parent = document.querySelector(".right-section");
-  const allArticles = await fetchArticles();
+  let allArticles = await fetchArticles();
+  allArticles = allArticles.filter((art) => {
+    console.log("art id=", art.id);
+    console.log("id=", id);
+    return art.id != id;
+  });
+  console.log(allArticles);
   const length = allArticles.length <= 3 ? allArticles.length : 3;
 
   for (let i = 0; i < length; i++) {
+    // console.log(allArticles[i].id);
+    // console.log(id);
+    // console.log(allArticles[i].id);
     const article = allArticles[i];
     const container = document.createElement("div");
     container.classList.add("article-item");
