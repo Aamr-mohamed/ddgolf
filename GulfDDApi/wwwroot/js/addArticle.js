@@ -6,7 +6,8 @@ const id = params.get("id");
 
 if (id) {
   pageTitle = lang == "en" ? "Edit Article" : "تعديل المقال";
-  document.querySelector("#h1-title").innerHTML = pageTitle;
+  document.querySelector("#h1-titleEn").innerHTML = pageTitle;
+  document.querySelector("#h1-titleAr").innerHTML = pageTitle;
   document.title = pageTitle;
   populateValues(id);
 }
